@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code - 2FA</title>
+    <style>
+        body { font-family: Arial; max-width: 500px; margin: 50px auto; padding: 20px; text-align: center; }
+        img { border: 2px solid #ccc; padding: 10px; margin: 20px 0; }
+        .info { background: #e7f3ff; padding: 15px; border-radius: 5px; margin: 20px 0; }
+        a { display: inline-block; padding: 10px 20px; background: #28a745; color: white; text-decoration: none; border-radius: 5px; }
+        a:hover { background: #218838; }
+    </style>
+</head>
+<body>
+    <h2>✅ Inscription réussie !</h2>
+    <p>Bienvenue <strong>{{ username }}</strong> !</p>
+    
+    <div class="info">
+        <p>📱 <strong>Scanne ce QR code avec ton app d'authentification</strong></p>
+        <p>(Google Authenticator, FreeOTP, Microsoft Authenticator...)</p>
+    </div>
+    
+    <img src="data:image/png;base64,{{ qr }}" alt="QR Code">
+    
+    <p>⚠️ Garde ce QR code précieusement !</p>
+    
+    <a href="/login">Se connecter maintenant</a>
+</body>
+</html>

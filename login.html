@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connexion - 2FA</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 50px auto; padding: 20px; }
+        input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+        button { width: 100%; padding: 10px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .info { background: #fff3cd; padding: 10px; border-radius: 5px; margin: 15px 0; }
+        a { color: #007bff; }
+    </style>
+</head>
+<body>
+    <h2>🔐 Connexion</h2>
+    <form method="POST">
+        <label>Nom d'utilisateur :</label>
+        <input type="text" name="username" required>
+        
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required>
+        
+        <button type="submit">Se connecter</button>
+    </form>
+    
+    <div class="info">
+        <p>Pas encore de compte ? <a href="/register">S'inscrire ici</a></p>
+    </div>
+</body>
+</html>
