@@ -42,7 +42,9 @@ J'ai réalisé ce projet sur ma machine personnelle :
 ```bash
 git clone https://github.com/faizahadd/flask-2fa-project.git
 cd flask-2fa-project
+mkdir templates
 ```
+Puis copier tous le fichiers ".html" dans templates/
 
 ### 2. Créer l'environnement virtuel
 
